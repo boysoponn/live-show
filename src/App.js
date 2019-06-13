@@ -16,7 +16,7 @@ state={
   shop:shop,
 }
 componentDidMount(){
-  let dbCon = config.database().ref('production/');
+  let dbCon = config.database().ref('production1/');
   dbCon.on('value', async (snapshot) => { 
     const snapshotValue = snapshot.val(); 
     let data = _(snapshotValue).value();
@@ -49,9 +49,9 @@ componentDidMount(){
                   {...this.state}
                 />
               </Overlay>   
-              <FacebookProvider appId="852169318469195">
-                <EmbeddedPost showText={false} href={this.state.videoLink} width="720" />
-              </FacebookProvider>
+                <FacebookProvider appId="2136930476607017">
+                  <EmbeddedPost showText={false} href={this.state.videoLink} width="720"/>
+                </FacebookProvider>
           </Container>
       </Center>
     );
@@ -62,7 +62,6 @@ componentDidMount(){
 
   const Container = styled.div`
   position: relative;
-  width: 720px;
   padding: 0;
 `;
   const Center = styled.div`
@@ -75,7 +74,7 @@ componentDidMount(){
   const Overlay = styled.div`
     bottom: 0;
     width: 100%;
-    display: ${props => props.status ? "none" : "block"};
+    display: ${props => props.status ? "block" : "none"};
     z-index: 50;
     background-color: #565656;
     position: absolute;
