@@ -31,9 +31,11 @@ class Preview2 extends Component {
                   direction="row"
                   justify="center"
                   alignItems="center">
+                  <a rel="noopener noreferrer" href="https://boysopon-shopping.bentoweb.com/th" target="_blank">
                   <DivImage>
                     <Image src= {this.props.shop[this.props.product1].img} alt="img"/>
                   </DivImage>
+                  </a>
                 </Grid>
             </Grid>
           </Grid>
@@ -60,9 +62,11 @@ class Preview2 extends Component {
                   direction="row"
                   justify="center"
                   alignItems="center">
+                  <a rel="noopener noreferrer" href="https://boysopon-shopping.bentoweb.com/th" target="_blank">
                   <DivImage>
                     <Image src= {this.props.shop[this.props.product2].img} alt="img"/>
                   </DivImage>
+                  </a>
                 </Grid>
             </Grid>
           </Grid>
@@ -96,7 +100,7 @@ class Preview2 extends Component {
 
   const DivImage = styled.div`
     right: 0;
-    height:100px;
+    height:80px;
   `;
 
   const Image = styled.img`

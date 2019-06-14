@@ -29,9 +29,11 @@ class Preview1 extends Component {
               direction="row"
               justify="center"
               alignItems="center">
+                <a rel="noopener noreferrer" href="https://boysopon-shopping.bentoweb.com/th" target="_blank" >
               <DivImage>
                 <Image src= {this.props.shop[this.props.product1].img} alt="img"/>
               </DivImage>
+              </a>
             </Grid>
         </Grid>
       </Div>    
